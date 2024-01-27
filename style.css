@@ -1,0 +1,293 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI";
+}
+li {
+  list-style: none;
+}
+a,a:visited {
+  color: rgb(255, 252, 252);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+a:hover {
+  color: rgb(255, 255, 255);
+}
+
+/**** NAVBAR ****/
+nav {
+
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 160px;
+  font-size: calc(0.5rem + 1.5vw);
+
+}
+
+
+.logo_epigeo2{
+
+  max-width: 60px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+/*premiere page*/
+.nav-menu{
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  font-size: calc(0.5rem + 1.5vw);
+  background-color: rgb(0, 0, 0);
+
+}
+.nav-menu a {
+  margin-right: 15px; /* esapce titre nav, pour probleme lors de l'herbergement (titre collaient au logo) */
+}
+.nav-menu li {
+  margin-right: 40px; 
+}
+/*menu burger page 1*/
+nav ul {
+
+  display: flex;
+  justify-content:space-between;
+  width: 100%;
+  padding: 10px;
+
+
+}
+
+nav li:hover a {
+  color: aliceblue;
+  text-decoration: none;
+  background-color: rgb(10, 10, 9);
+  font-size: large;
+
+
+}
+
+#icons {
+  cursor: pointer;
+  display: none;
+  color: #ffffff;
+}
+
+/****NAVBAR 2E****/
+
+.new-navbar {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  font-size: calc(0.5rem + 1.5vw);
+
+}
+
+.new-navbar ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+.new-navbar li:hover a {
+  color: aliceblue;
+  text-decoration: none;
+
+}
+
+.nav-div-second ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+}
+/*puces du menu 2*/
+
+.nav-div-second li:hover a {
+  color: aliceblue;
+  text-decoration: none;
+  background-color: rgb(236, 214, 156);
+
+}
+/*menu vers le bas avec titres histoire*/
+
+
+.menu-deroulant {
+  display: none; /* Caché par défaut */
+  color: rgb(255, 255, 255);
+  background-color: rgb(237, 172, 87);
+  text-align: center;
+  
+}
+
+.menu-deroulant a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+ 
+}
+
+.menu-deroulant a:hover {
+  color: rgba(30, 29, 28, 0.795);
+  font-size: large;
+}
+
+
+@media (max-width: 975px) {
+
+  .menu-deroulant {
+    display: block; /* Affiche le menu lorsque l'écran est de 824px ou moins */
+    width: 100%; 
+  }
+
+
+ /*permet de diposer le bouton du menu burger*/
+  
+  #icons {
+    display: block;
+  
+  }
+  #icons:before { 
+    content: "\2630";
+  }
+  .active #icons:before {  /*icon devient un croix quand on clique*/
+    content: "\2715";
+  }
+  .nav-div ul {
+    display: inline-flex;
+    justify-content:center;
+    position:absolute;
+    top: 150px;
+  
+    flex-direction: column;
+    text-align: center;
+    max-width: 100%; 
+    height: 370px;
+    font-size: larger;
+    background-color: rgb(237, 172, 87);
+
+
+  }
+  nav ul {
+    display: inline-flex;
+    justify-content:center;
+    position:absolute;
+    left: -100%;
+    top: 130px;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.25s;
+    max-width: 100%; 
+    height: 410px;
+    max-height: fit-content;
+    font-size: larger;
+    background-color: #46413a89;
+
+
+  }
+
+
+  /*espacement entre les puces menu burger*/
+  nav li {
+    padding: 1px ;
+
+  }
+
+
+  }
+  nav.active ul {
+    left: 0;
+
+  }
+
+
+li {
+  list-style: none;
+}
+
+a, a:visited {
+  color: rgb(255, 252, 252);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: xx-small ;
+}
+
+
+/* Flexbox pour superposer les menus */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles des menus / nav principale en haut (noire)*/
+
+.nav-div {
+  background: rgb(0, 0, 0);
+  padding: 10px;
+  font-size: calc(0.5rem + 1.5vw);
+  width: 100%;
+
+}
+
+/*menu burger page 2*/
+.nav-div-second ul {
+  display: none;
+  justify-content:center;
+  text-align: center;
+  width: 100%;
+  height: 54.8%;
+  margin-top: 0%;
+}
+
+.nav-div li:hover a {
+  color: aliceblue;
+  text-decoration: none;
+  width: 100%;
+  background-color: rgb(147, 140, 140);
+ 
+
+}
+
+.nav-div{
+  background-color: rgb(0, 0, 0);
+}
+
+
+.nav-div-second {
+  display: block;
+  background: rgb(177, 98, 28);
+  padding: 20px;
+  font-size: calc(0.5rem + 1.5vw);
+  width: 100%;
+}
+
+.nav-div-second ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+}
+/*puces du menu 2*/
+
+.nav-div-second li:hover a {
+  color: aliceblue;
+  text-decoration: none;
+  background-color: rgb(236, 214, 156);
+
+}
+
+.container-b {
+  width: 100%;
+  height: 100%; /* 100% de la hauteur de la vue (viewport height) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

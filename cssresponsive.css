@@ -1,0 +1,373 @@
+
+body {
+
+  background-color: rgb(231, 203, 170);
+  margin: auto;
+
+}
+
+h1{
+
+font-family:'Courier New', Courier, monospace;
+font-size: xx-large;
+
+}
+
+h2{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-align: center;
+  text-align: justify;
+}
+
+h3{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
+}
+
+h4{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 400;
+  font-weight: lighter, italic;
+  
+}
+p{
+  text-align: justify;
+  font-weight: 300;
+  font-size: medium;
+ 
+}
+
+.texte{
+max-width: 800px; 
+margin: auto;
+text-align: justify;
+flex-direction: column;
+}
+.texte1{
+  font-weight: lighter;
+  max-width: 800px; 
+  margin: auto; 
+  text-align: justify;
+  }
+
+.banniere img{
+  width: 100%;
+  height: 400px;
+  background-attachment: fixed;
+  margin-top:-24px;
+}
+
+.banniere1 img {
+  width: 100%;
+  height: 400px;
+  background-attachment: fixed;
+  margin-top:-24px;
+}
+
+.banniere2 img {
+  width: 100%;
+  height: 400px;
+  background-attachment: fixed;
+  margin-top: -10px;
+}
+ 
+ 
+
+
+.logo{
+  display: block;
+  margin: 0 auto;
+  width: 200px; 
+  height: 200px; 
+}
+.premiere_carte{
+  display: block;
+  margin: auto;
+  max-width: 500px; 
+  width: 1000px;
+  height: 400px;
+}
+
+.babylone{
+  display: block;
+  margin: 0 auto;
+  max-width: 100%; 
+  max-height: 100%;
+}
+.antiquite{
+  display: block;
+  margin: auto;
+  max-width: 500px; 
+  height: 300px; 
+ 
+}
+.ptolemee{
+  display: block;
+  margin: auto;
+  max-width: 100%; 
+  max-height: 100%;
+}
+
+.carte_en_t{
+  display: block;
+  margin: auto;
+  max-width: 700px; 
+  height: 300px; 
+}
+.moyen_age{
+
+  display: block;
+  margin: 0 auto;
+  max-width: 100%; 
+  max-height: 100%;
+}
+.mercator{
+  display: block;
+  margin: 0 auto;
+  max-width: 100%; 
+  max-height: 100%;
+}
+.encyclopedie{
+  display: block;
+  margin: auto;
+  height: 350px;
+  max-width: 100%; 
+  max-height: 100%;
+}
+.snow{
+  display: block;
+  margin: 0 auto;
+  height: 400px;
+  width: 800px;
+  max-width: 100%; 
+  max-height: 100%;
+}
+/****page des rubriques focus****/
+.al-idrissi{
+  display: block;
+  margin: 0 auto;
+  max-width: 100%; 
+  max-height: 100%;
+  }
+
+.portulan{
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 100%; 
+  max-height: 100%; 
+}
+.lumiere-img{
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  max-width: 100%; 
+  max-height: 100%; 
+}
+
+.cristaller{
+  display: block;
+  margin: auto;
+  max-width: 80%;
+  max-height: 80%;
+}
+.harvey_img{
+  display: block;
+  margin: auto;
+  max-width: 40%;
+  max-height: 40%; 
+}
+
+.cassini{
+  display: block;
+  margin: 0 auto;
+  max-width: 100%; 
+  max-height: 100%;
+  width: 100%;
+}
+/*Video youtube*/
+
+.video_pc{
+  display: block;
+  margin: auto;
+  width: 800px;;
+  height: 400px;
+  max-width: 100%;
+  max-height: 100%
+}
+.video_al_idrissi{
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  height: 500px;
+  width: 800px;
+ 
+}
+.video_debat{
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  height: 400px;
+  width: 800px;
+ 
+}
+.video_harvey{
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  height: 500px;
+  width: 800px;
+}
+.video_pumain{
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  height: 500px;
+  width: 800px;
+}
+
+/*a déplacer dans le css nav*/
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+
+.logo_epigeo{
+
+  max-width: 60px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+
+/*Style pour les boutons*/ 
+/*le before et le hover permettent de créer un effet 3D un gradien*/
+
+.bouton{
+  text-align: center,justify;
+  padding: 10px 20px;
+  background-color: #dae4eb;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.bouton {
+  display: block;
+  text-align: center;
+  background-color: rgb(191, 160, 122);
+  margin: 0 auto; 
+  font-family: 'Times New Roman', Times, serif;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: relative;
+  white-space: nowrap;
+}
+
+.bouton::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+  background: linear-gradient(45deg, #f5f5f5, #e0e0e0);
+  border-radius: 5px;
+  z-index: -1;
+}
+
+.bouton:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/*Bouton qui permet de remonter au menu pour la page histoire*/
+.bouton-m {
+  display: block;
+  position: fixed;
+  background-color: rgb(143, 85, 15);
+  text-align: left;
+  margin-top: 600px;  
+  max-width: 800px;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 8px 1px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+
+}
+
+.bouton-rond:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.bouton-rond {
+  display: inline-block;
+  background-color: rgb(191, 160, 122);
+  color: #fff;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px; 
+  padding: 50px 50px; 
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+}
+
+
+/*Liste pour les références bibliographiques*/
+
+
+
+li {
+  margin-bottom: 10px; /* Espace entre les éléments des listes */
+}
+
+/*Recherche ressources*/
+
+#searchResultsContainer {
+  text-align: center;
+  margin-top: 50px;
+  margin: auto;
+  position: relative;
+ 
+}
+
+#searchInput {
+  width: 330px;
+  padding: 10px;
+  margin-left: 390px;
+
+}
+
+
+
+.bouton-search {
+  padding: 12px 20px;
+  cursor: pointer;
+  background-color: #94550d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+#searchResults {
+  list-style: none;
+  padding: 0;
+}
+@media (max-width: 975px) {
+  #searchInput {
+    width: 300px;
+    padding: 10px;
+    margin-left: 10px;
+  }
+}
